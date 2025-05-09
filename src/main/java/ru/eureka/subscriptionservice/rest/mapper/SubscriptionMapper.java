@@ -2,7 +2,7 @@ package ru.eureka.subscriptionservice.rest.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import ru.eureka.subscriptionservice.config.mapper.MapperConfiguration;
+import ru.eureka.subscriptionservice.config.MapperConfiguration;
 import ru.eureka.subscriptionservice.persistance.entity.SubscriptionEntity;
 import ru.eureka.subscriptionservice.rest.dto.SubscriptionRequest;
 import ru.eureka.subscriptionservice.rest.dto.SubscriptionResponse;

@@ -1,4 +1,4 @@
-package ru.eureka.subscriptionservice.config.mapper;
+package ru.eureka.subscriptionservice.config;
 
 import org.mapstruct.*;
 
