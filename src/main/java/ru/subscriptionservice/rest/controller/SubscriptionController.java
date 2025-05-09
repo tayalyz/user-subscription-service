@@ -17,13 +17,13 @@ public class SubscriptionController {
 
     private final SubscriptionService subscriptionService;
 
-    @PostMapping("/{userId}")
-    public ResponseEntity<SubscriptionResponse> addSubscription(@PathVariable Long userId, @RequestBody SubscriptionRequest request) {
+    @PostMapping
+    public ResponseEntity<SubscriptionResponse> addSubscription(@RequestHeader("X-User-Id") Long userId, @RequestBody SubscriptionRequest request) {
         return ResponseEntity.ok(subscriptionService.addSubscription(userId, request));
     }
 
-    @GetMapping("/{userId}")
-    public ResponseEntity<List<SubscriptionResponse>> getSubscriptions(@PathVariable(name = "userId") Long userId) {
+    @GetMapping
+    public ResponseEntity<List<SubscriptionResponse>> getSubscriptions(@RequestHeader("X-User-Id") Long userId) {
         return ResponseEntity.ok(subscriptionService.getUserSubscriptions(userId));
     }
 
@@ -33,7 +33,7 @@ public class SubscriptionController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping
+    @GetMapping("/top")
     public ResponseEntity<List<TopSubscriptionResponse>> getTopSubscriptions() {
         return ResponseEntity.ok(subscriptionService.getTopSubscriptions());
     }

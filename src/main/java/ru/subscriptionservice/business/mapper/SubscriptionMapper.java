@@ -17,5 +17,6 @@ public interface SubscriptionMapper {
 
     List<SubscriptionResponse> toResponseList(List<SubscriptionEntity> entities);
 
+    @Mapping(target = "user.id", source = "userId")
     SubscriptionEntity toEntity(SubscriptionRequest request);
 }
