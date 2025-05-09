@@ -4,7 +4,7 @@ import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import ru.eureka.subscriptionservice.rest.mapper.UserMapper;
+import ru.eureka.subscriptionservice.business.mapper.UserMapper;
 import ru.eureka.subscriptionservice.business.service.UserService;
 import ru.eureka.subscriptionservice.persistance.repository.UserRepository;
 import ru.eureka.subscriptionservice.rest.dto.UserRequest;

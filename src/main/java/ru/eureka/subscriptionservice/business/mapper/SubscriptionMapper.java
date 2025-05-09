@@ -1,4 +1,4 @@
-package ru.eureka.subscriptionservice.rest.mapper;
+package ru.eureka.subscriptionservice.business.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -15,10 +15,7 @@ public interface SubscriptionMapper {
     @Mapping(target = "userId", source = "user.id")
     SubscriptionResponse toResponse(SubscriptionEntity entity);
 
-    @Mapping(target = "type", expression="java(subscription.getType().name())")
     List<SubscriptionResponse> toResponseList(List<SubscriptionEntity> entities);
-
-
 
     SubscriptionEntity toEntity(SubscriptionRequest request);
 }

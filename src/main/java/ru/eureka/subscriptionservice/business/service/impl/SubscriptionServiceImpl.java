@@ -12,7 +12,7 @@ import ru.eureka.subscriptionservice.persistance.repository.UserRepository;
 import ru.eureka.subscriptionservice.rest.dto.SubscriptionRequest;
 import ru.eureka.subscriptionservice.rest.dto.SubscriptionResponse;
 import ru.eureka.subscriptionservice.rest.dto.TopSubscriptionResponse;
-import ru.eureka.subscriptionservice.rest.mapper.SubscriptionMapper;
+import ru.eureka.subscriptionservice.business.mapper.SubscriptionMapper;
 
 import java.util.List;
 

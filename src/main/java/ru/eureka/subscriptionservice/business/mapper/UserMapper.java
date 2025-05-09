@@ -1,4 +1,4 @@
-package ru.eureka.subscriptionservice.rest.mapper;
+package ru.eureka.subscriptionservice.business.mapper;
 
 import org.mapstruct.Mapper;
 import ru.eureka.subscriptionservice.config.MapperConfiguration;
